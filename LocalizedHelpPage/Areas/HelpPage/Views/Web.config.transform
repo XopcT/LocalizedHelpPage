@@ -1,0 +1,10 @@
+﻿<configuration>
+  <system.web.webPages.razor>
+    <pages pageBaseType="System.Web.Mvc.WebViewPage">
+      <namespaces>
+        <add namespace="$rootnamespace$.Areas.HelpPage.Resources"/>
+
+      </namespaces>
+    </pages>
+  </system.web.webPages.razor>
+</configuration>
