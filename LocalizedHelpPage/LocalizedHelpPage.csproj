@@ -329,6 +329,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Areas\HelpPage\Resources\HelpPageResources.de-DE.resx" />
     <EmbeddedResource Include="Areas\HelpPage\Resources\HelpPageResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>HelpPageResources.Designer.cs</LastGenOutput>
@@ -413,7 +414,6 @@
     <ReplaceFileText InputFilename="$(ProjectDir)Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" OutputFilename="$(SolutionDir)NugetPackage\content\Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml.pp" MatchExpression="LocalizedHelpPage." ReplacementText="$rootnamespace$." />
     <ReplaceFileText InputFilename="$(ProjectDir)Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" OutputFilename="$(SolutionDir)NugetPackage\content\Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml.pp" MatchExpression="LocalizedHelpPage." ReplacementText="$rootnamespace$." />
     <Copy SourceFiles="$(ProjectDir)\Areas\HelpPage\Views\Web.config.transform" DestinationFiles="$(SolutionDir)NugetPackage\content\Areas\HelpPage\Views\web.config.transform" />
-
     <Copy SourceFiles="$(ProjectDir)Views\Shared\_Layout.cshtml" DestinationFiles="$(SolutionDir)NugetPackage\content\Views\Shared\_Layout.cshtml" />
     <ReplaceFileText InputFilename="$(ProjectDir)Controllers\LocalizedValuesController.cs" OutputFilename="$(SolutionDir)NugetPackage\content\Controllers\LocalizedValuesController.cs.pp" MatchExpression="LocalizedHelpPage." ReplacementText="$rootnamespace$." />
   </Target>
@@ -429,16 +429,14 @@
       <Using Namespace="System" />
       <Using Namespace="System.IO" />
       <Using Namespace="System.Text.RegularExpressions" />
-      <Code Type="Fragment" Language="cs">
-        <![CDATA[
+      <Code Type="Fragment" Language="cs"><![CDATA[
             if(!File.Exists(OutputFilename))
             {
                Directory.CreateDirectory(Path.GetDirectoryName(OutputFilename));
                using(File.Create(OutputFilename));
             }
             File.WriteAllText(OutputFilename,Regex.Replace(File.ReadAllText(InputFilename), MatchExpression, ReplacementText));
-          ]]>
-      </Code>
+          ]]></Code>
     </Task>
   </UsingTask>
 </Project>

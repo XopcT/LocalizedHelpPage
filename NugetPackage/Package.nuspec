@@ -2,15 +2,16 @@
 <package >
   <metadata>
     <id>Microsoft.AspNet.WebApi.LocalizedHelpPage</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <authors>Vladimir Verbitsky</authors>
     <owners>Vladimir Verbitsky</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
-      Adds localization to your ASP.NET MVC API Help Page and automatically generates localized help page content. Based on default Help Page.
-      Source code located on https://github.com/XopcT/LocalizedHelpPage
+Localized Help Page adds localization to your ASP.NET WebAPI Help Page and automatically generates localized Help Page content.
+Please note that this project is not affiliated with Microsoft in any way.
+Source code located on https://github.com/XopcT/LocalizedHelpPage
     </description>
-    <tags>ASPNET MVC ASPNETWebAPI WebAPI HelpPage Globalization Localization</tags>
+    <tags>AspNet AspNetWebAPI WebAPI HelpPage Globalization Localization</tags>
     <dependencies>
       <dependency id="Microsoft.AspNet.WebApi.HelpPage" version="5.2.3" />
     </dependencies>

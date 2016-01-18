@@ -117,142 +117,100 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Boolean" xml:space="preserve">
-    <value>boolean</value>
-  </data>
-  <data name="Byte" xml:space="preserve">
-    <value>byte</value>
-  </data>
-  <data name="Character" xml:space="preserve">
-    <value>character</value>
-  </data>
   <data name="DataTypeAttributeFormat" xml:space="preserve">
-    <value>Тип данных: {0}</value>
-  </data>
-  <data name="DateTime" xml:space="preserve">
-    <value>date</value>
-  </data>
-  <data name="DateTimeOffset" xml:space="preserve">
-    <value>date</value>
-  </data>
-  <data name="Decimal" xml:space="preserve">
-    <value>decimal</value>
-  </data>
-  <data name="Guid" xml:space="preserve">
-    <value>Guid</value>
-  </data>
-  <data name="Integer" xml:space="preserve">
-    <value>integer</value>
-  </data>
-  <data name="MaxLengthAttributeFormat" xml:space="preserve">
-    <value>Максимальная длина: {0}</value>
-  </data>
-  <data name="MinLengthAttributeFormat" xml:space="preserve">
-    <value>Минимальная длина: {0}</value>
-  </data>
-  <data name="RangeAttributeFormat" xml:space="preserve">
-    <value>Интервал: от {0} до {1} включительно</value>
-  </data>
-  <data name="RegularExpressionAttributeFormat" xml:space="preserve">
-    <value>Шаблон: {0}</value>
-  </data>
-  <data name="RequiredAttribute" xml:space="preserve">
-    <value>Обязательное поле</value>
-  </data>
-  <data name="SignedByte" xml:space="preserve">
-    <value>signed byte</value>
-  </data>
-  <data name="String" xml:space="preserve">
-    <value>string</value>
-  </data>
-  <data name="StringLengthAttributeFormat" xml:space="preserve">
-    <value>Длина строки: от {0} до {1} включительно</value>
-  </data>
-  <data name="TimeSpan" xml:space="preserve">
-    <value>time interval</value>
-  </data>
-  <data name="UnsignedInteger" xml:space="preserve">
-    <value>unsigned integer</value>
-  </data>
-  <data name="URI" xml:space="preserve">
-    <value>URI</value>
-  </data>
-  <data name="Views_AdditionalInformation" xml:space="preserve">
-    <value>Дополнительная информация</value>
-  </data>
-  <data name="Views_API" xml:space="preserve">
-    <value>API</value>
-  </data>
-  <data name="Views_APIDescription" xml:space="preserve">
-    <value>Укажите здесь описание своего API.</value>
-  </data>
-  <data name="Views_BodyParameters" xml:space="preserve">
-    <value>Параметры запроса</value>
-  </data>
-  <data name="Views_Description" xml:space="preserve">
-    <value>Описание</value>
-  </data>
-  <data name="Views_DocumentationNotAvailable" xml:space="preserve">
-    <value>Документация недоступна.</value>
-  </data>
-  <data name="Views_EnumerationValues" xml:space="preserve">
-    <value>Значения перечисления:</value>
-  </data>
-  <data name="Views_Introduction" xml:space="preserve">
-    <value>Введение</value>
-  </data>
-  <data name="Views_Name" xml:space="preserve">
-    <value>Имя</value>
-  </data>
-  <data name="Views_None" xml:space="preserve">
-    <value>Нет</value>
-  </data>
-  <data name="Views_RequestFormats" xml:space="preserve">
-    <value>Форматы запроса</value>
-  </data>
-  <data name="Views_RequestInformation" xml:space="preserve">
-    <value>Описание запроса</value>
-  </data>
-  <data name="Views_ResourceDescription" xml:space="preserve">
-    <value>Описание ресурса</value>
-  </data>
-  <data name="Views_ResponseFormats" xml:space="preserve">
-    <value>Форматы ответа</value>
-  </data>
-  <data name="Views_ResponseInformation" xml:space="preserve">
-    <value>Описание ответа</value>
-  </data>
-  <data name="Views_Sample" xml:space="preserve">
-    <value>Пример:</value>
-  </data>
-  <data name="Views_SampleNotAvailable" xml:space="preserve">
-    <value>Пример недоступен.</value>
-  </data>
-  <data name="Views_Type" xml:space="preserve">
-    <value>Тип</value>
-  </data>
-  <data name="Views_URIParameters" xml:space="preserve">
-    <value>Параметры URI</value>
-  </data>
-  <data name="Views_Value" xml:space="preserve">
-    <value>Значение</value>
-  </data>
-  <data name="Views_CollectionOf" xml:space="preserve">
-    <value>Коллекция</value>
-  </data>
-  <data name="Views_And" xml:space="preserve">
-    <value>и</value>
-  </data>
-  <data name="Views_DictionaryOf" xml:space="preserve">
-    <value>Словарь</value>
-  </data>
-  <data name="Views_PairOf" xml:space="preserve">
-    <value>Пара</value>
-  </data>
-  <data name="Views_HelpPageHome" xml:space="preserve">
-    <value>Описание API</value>
+    <value>Datentyp: {0}</value>
   </data>
   <data name="DefaultValueFormat" xml:space="preserve">
-    <value>Значение по умолчанию {0}</value>
+    <value>Standardwert: {0}</value>
+  </data>
+  <data name="MaxLengthAttributeFormat" xml:space="preserve">
+    <value>Maximallänge: {0}</value>
+  </data>
+  <data name="MinLengthAttributeFormat" xml:space="preserve">
+    <value>Mindestlänge: {0}</value>
+  </data>
+  <data name="RangeAttributeFormat" xml:space="preserve">
+    <value>Abstand: von {0} bis inkl. {1}</value>
+  </data>
+  <data name="RegularExpressionAttributeFormat" xml:space="preserve">
+    <value>Vorlage:  {0}</value>
+  </data>
+  <data name="RequiredAttribute" xml:space="preserve">
+    <value>Erforderlich</value>
+  </data>
+  <data name="StringLengthAttributeFormat" xml:space="preserve">
+    <value>Zeilenlänge: von {0} bis inkl. {1}</value>
+  </data>
+  <data name="Views_AdditionalInformation" xml:space="preserve">
+    <value>Zusatzinformation</value>
+  </data>
+  <data name="Views_And" xml:space="preserve">
+    <value>und</value>
+  </data>
+  <data name="Views_APIDescription" xml:space="preserve">
+    <value>Hier die Beschreibung Ihres APIs angeben.</value>
+  </data>
+  <data name="Views_BodyParameters" xml:space="preserve">
+    <value>Anforderungsparameter</value>
+  </data>
+  <data name="Views_CollectionOf" xml:space="preserve">
+    <value>Kollektion von</value>
+  </data>
+  <data name="Views_Description" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="Views_DictionaryOf" xml:space="preserve">
+    <value>Diktionär von</value>
+  </data>
+  <data name="Views_DocumentationNotAvailable" xml:space="preserve">
+    <value>Unterlagen nicht verfügbar.</value>
+  </data>
+  <data name="Views_EnumerationValues" xml:space="preserve">
+    <value>Aufzählungswert:</value>
+  </data>
+  <data name="Views_HelpPageHome" xml:space="preserve">
+    <value>API Beschreibung</value>
+  </data>
+  <data name="Views_Introduction" xml:space="preserve">
+    <value>Einführung</value>
+  </data>
+  <data name="Views_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Views_None" xml:space="preserve">
+    <value>Kein</value>
+  </data>
+  <data name="Views_PairOf" xml:space="preserve">
+    <value>Paar von</value>
+  </data>
+  <data name="Views_RequestFormats" xml:space="preserve">
+    <value>Anfrageformat</value>
+  </data>
+  <data name="Views_RequestInformation" xml:space="preserve">
+    <value>Beschreibung der Anfrage</value>
+  </data>
+  <data name="Views_ResourceDescription" xml:space="preserve">
+    <value>Beschreibung der Quelle</value>
+  </data>
+  <data name="Views_ResponseFormats" xml:space="preserve">
+    <value>Antwortformat</value>
+  </data>
+  <data name="Views_ResponseInformation" xml:space="preserve">
+    <value>Antwortbeschreibung</value>
+  </data>
+  <data name="Views_Sample" xml:space="preserve">
+    <value>Beispiel:</value>
+  </data>
+  <data name="Views_SampleNotAvailable" xml:space="preserve">
+    <value>Beispiel nicht verfügbar.</value>
+  </data>
+  <data name="Views_Type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="Views_URIParameters" xml:space="preserve">
+    <value>URI Parameter</value>
+  </data>
+  <data name="Views_Value" xml:space="preserve">
+    <value>Wert</value>
   </data>
 </root>
