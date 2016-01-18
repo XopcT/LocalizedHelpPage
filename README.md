@@ -15,12 +15,13 @@ Localized Help Page can also generate content from XML documentation for of your
 `~/App_Data/XmlDocument.xml` is the relative path to your XML documentation. Make sure to surn on "XML documentation file" option when building your project.
 
 Then you can write localized XML comments to your classes by adding attribute `xml:lang="xx-XX"` (`xx-XX` stands for culture name e.g. `ru-RU`) to standard notation as follows:
+
     /// <summary>Gets a value</summary>
     /// <param name="id">ID of the value</param>
     /// <returns>Value</returns>
-    /// <summary xml:lang="ru-RU">Возвращает значение</summary>
-    /// <param name="id" xml:lang="ru-RU">ID значения</param>
-    /// <returns xml:lang="ru-RU">Значение</returns>
+    /// <summary xml:lang="ru-RU">Р’РѕР·РІСЂР°С‰Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ</summary>
+    /// <param name="id" xml:lang="ru-RU">ID Р·РЅР°С‡РµРЅРёСЏ</param>
+    /// <returns xml:lang="ru-RU">Р—РЅР°С‡РµРЅРёРµ</returns>
     public string Get(int id)
     {
         return "value";
