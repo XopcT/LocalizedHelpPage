@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Microsoft.AspNet.WebApi.LocalizedHelpPage</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Vladimir Verbitsky</authors>
     <owners>Vladimir Verbitsky</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

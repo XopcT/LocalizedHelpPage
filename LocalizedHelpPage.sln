@@ -10,6 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NugetPackage", "NugetPackag
 		NugetPackage\Package.nuspec = NugetPackage\Package.nuspec
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{F2CCD103-EE74-42BF-8F17-0905BDAD5E5B}"
+	ProjectSection(SolutionItems) = preProject
+		NugetPackage\tools\install.ps1 = NugetPackage\tools\install.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,5 +28,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2CCD103-EE74-42BF-8F17-0905BDAD5E5B} = {4D8A8AB6-C21A-40BE-8C1C-0D0442D7A23F}
 	EndGlobalSection
 EndGlobal

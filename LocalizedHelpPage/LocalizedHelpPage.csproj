@@ -226,6 +226,7 @@
     <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
     <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
     <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\MultipleSourceDocumentationProvider.cs" />
     <Compile Include="Areas\HelpPage\Resources\HelpPageResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -394,6 +395,7 @@
     <ReplaceFileText InputFilename="$(ProjectDir)Areas\HelpPage\HelpPageConfigurationExtensions.cs" OutputFilename="$(SolutionDir)NugetPackage\content\Areas\HelpPage\HelpPageConfigurationExtensions.cs.pp" MatchExpression="LocalizedHelpPage." ReplacementText="$rootnamespace$." />
     <ReplaceFileText InputFilename="$(ProjectDir)Areas\HelpPage\LocalizedApiExplorer.cs" OutputFilename="$(SolutionDir)NugetPackage\content\Areas\HelpPage\LocalizedApiExplorer.cs.pp" MatchExpression="LocalizedHelpPage." ReplacementText="$rootnamespace$." />
     <ReplaceFileText InputFilename="$(ProjectDir)Areas\HelpPage\LocalizedXmlDocumentationProvider.cs" OutputFilename="$(SolutionDir)NugetPackage\content\Areas\HelpPage\LocalizedXmlDocumentationProvider.cs.pp" MatchExpression="LocalizedHelpPage." ReplacementText="$rootnamespace$." />
+    <ReplaceFileText InputFilename="$(ProjectDir)Areas\HelpPage\MultipleSourceDocumentationProvider.cs" OutputFilename="$(SolutionDir)NugetPackage\content\Areas\HelpPage\MultipleSourceDocumentationProvider.cs.pp" MatchExpression="LocalizedHelpPage." ReplacementText="$rootnamespace$." />
     <ReplaceFileText InputFilename="$(ProjectDir)Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" OutputFilename="$(SolutionDir)NugetPackage\content\Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs.pp" MatchExpression="LocalizedHelpPage." ReplacementText="$rootnamespace$." />
     <ReplaceFileText InputFilename="$(ProjectDir)Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" OutputFilename="$(SolutionDir)NugetPackage\content\Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs.pp" MatchExpression="LocalizedHelpPage." ReplacementText="$rootnamespace$." />
     <ReplaceFileText InputFilename="$(ProjectDir)Areas\HelpPage\Views\Help\Api.cshtml" OutputFilename="$(SolutionDir)NugetPackage\content\Areas\HelpPage\Views\Help\Api.cshtml.pp" MatchExpression="LocalizedHelpPage." ReplacementText="$rootnamespace$." />
@@ -429,14 +431,16 @@
       <Using Namespace="System" />
       <Using Namespace="System.IO" />
       <Using Namespace="System.Text.RegularExpressions" />
-      <Code Type="Fragment" Language="cs"><![CDATA[
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
             if(!File.Exists(OutputFilename))
             {
                Directory.CreateDirectory(Path.GetDirectoryName(OutputFilename));
                using(File.Create(OutputFilename));
             }
             File.WriteAllText(OutputFilename,Regex.Replace(File.ReadAllText(InputFilename), MatchExpression, ReplacementText));
-          ]]></Code>
+          ]]>
+      </Code>
     </Task>
   </UsingTask>
 </Project>
